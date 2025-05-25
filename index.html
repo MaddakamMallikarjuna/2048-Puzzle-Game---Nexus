@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="2048 Game Clone - Responsive JavaScript Puzzle Game" />
+  <meta name="description" content="Play a modern 2048 game clone built with HTML, CSS, and JavaScript. Enjoy smooth animations, dynamic grid sizes, and responsive design. A perfect browser-based puzzle game!" />
+  <meta name="keywords" content="2048 game, 2048 clone, JavaScript game, HTML CSS JavaScript, puzzle game, responsive web game, browser game, tile matching game, modern 2048, sliding number game" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>2048 Game</title>
+  
+</head>
+<body>
+  <div id="start-screen">
+    <h1>2048 Game</h1>
+    <label for="grid-size">Grid size (4-8): </label>
+    <input type="number" id="grid-size" min="4" max="8" value="4">
+    <button id="start-btn">Start Game</button>
+    <div id="rules">
+      <h3>How to Play</h3>
+      <ul>
+        <li>Use arrow keys to move tiles.</li>
+        <li>When two tiles with the same number touch, they merge into one.</li>
+        <li>Try to reach the 2048 tile!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="score-board">Score: <span id="score">0</span></div>
+    <div id="grid"></div>
+  </div>
+
+  <div id="game-controls">
+    <button id="reset-btn">Reset</button>
+    <button id="back-btn">Back to Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
